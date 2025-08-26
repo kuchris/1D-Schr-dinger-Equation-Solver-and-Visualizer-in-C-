@@ -40,7 +40,7 @@ To build and run this application, you need:
 
 ```bash
 qmake SchrodingerSolver.pro
-nmake  # or jom for parallel builds
+nmake
 ```
 
 ## Usage
