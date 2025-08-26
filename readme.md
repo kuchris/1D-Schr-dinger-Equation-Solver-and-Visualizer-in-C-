@@ -36,34 +36,12 @@ To build and run this application, you need:
 
 ## Building
 
-### Windows (Visual Studio)
+### Windows
 
-1. Open the `.pro` file in Qt Creator
-2. Configure the project with your Qt version and compiler
-3. Build the project
-
-Alternatively, you can use qmake from the command line:
 ```bash
 qmake SchrodingerSolver.pro
 nmake  # or jom for parallel builds
 ```
-
-### Linux/macOS
-
-1. Install dependencies:
-   ```bash
-   # Ubuntu/Debian
-   sudo apt-get install qt5-default libqt5charts5-dev libfftw3-dev libeigen3-dev
-   
-   # macOS (with Homebrew)
-   brew install qt fftw eigen
-   ```
-
-2. Build the project:
-   ```bash
-   qmake SchrodingerSolver.pro
-   make
-   ```
 
 ## Usage
 
@@ -124,21 +102,3 @@ An implicit finite difference method that is second-order accurate in both time 
 ### Split-Step Fourier Method
 
 A spectral method that decomposes the evolution operator into kinetic and potential parts. It alternates between position and momentum space using Fast Fourier Transforms (FFTW library).
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Commit your changes
-4. Push to the branch
-5. Create a Pull Request
-
-## Acknowledgments
-
-- Uses [Eigen](http://eigen.tuxfamily.org/) for linear algebra operations
-- Uses [FFTW](http://www.fftw.org/) for Fast Fourier Transforms
-- Built with [Qt](https://www.qt.io/) framework
